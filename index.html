@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Welcome to Savory Bites — a cozy neighborhood restaurant offering fresh, locally-sourced meals and warm hospitality." />
+  <meta name="keywords" content="Savory Bites, restaurant, local food, menu, reservation, dining" />
+  <meta name="author" content="Savory Bites" />
+  <title>Savory Bites | Fresh & Local Dining</title>
+</head>
+<body>
+
+  <header>
+    <h1>Savory Bites</h1>
+    <p>Fresh, Local, Made with Love</p>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#reservations">Reservations</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About Us</h2>
+      <p>Savory Bites is a family-owned restaurant located in the heart of the city. We pride ourselves on using locally-sourced ingredients and preparing each dish with care. Whether you're stopping in for lunch or planning a special dinner, we offer an experience that feels like home.</p>
+    </section>
+
+    <section id="menu" aria-labelledby="menu-heading">
+      <h2 id="menu-heading">Our Menu</h2>
+
+      <article>
+        <h3>Appetizers</h3>
+        <ul>
+          <li>Tomato Bruschetta</li>
+          <li>Stuffed Bell Peppers</li>
+          <li>Garlic Bread with Cheese</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Main Courses</h3>
+        <ul>
+          <li>Grilled Salmon with Herb Butter</li>
+          <li>Chicken Alfredo Pasta</li>
+          <li>Vegetarian Stuffed Peppers</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Desserts</h3>
+        <ul>
+          <li>Chocolate Lava Cake</li>
+          <li>Pumpkin Pie</li>
+          <li>Vanilla Ice cream with Cherries</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="reservations" aria-labelledby="reservations-heading">
+      <h2 id="reservations-heading">Make a Reservation</h2>
+      <form action="/submit" method="post">
+        <fieldset>
+          <legend>Reservation Details</legend>
+
+          <label for="fullname">Name:</label>
+          <input type="text" id="fullname" name="fullname" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required />
+
+          <label for="time">Time:</label>
+          <input type="time" id="time" name="time" required />
+
+          <label for="guests">Number of Guests:</label>
+          <input type="number" id="guests" name="guests" min="1" max="20" required />
+
+          <button type="submit">Book Now</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Us</h2>
+      <address>
+        Savory Bites<br>
+        Nairobi<br>
+        Kimathi Street<br>
+        Phone: <a href="tel:+254745678901">(254)7 456-78901</a><br>
+        Email: <a href="mailto:info@savorybites.com">info@savorybites.com</a>
+      </address>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Savory Bites. All rights reserved.</p>
+    <p><small>A place where we turn moments into unforgettable memories.</small></p>
+  </footer>
+
+</body>
+</html>
